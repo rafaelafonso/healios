@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53C87D672675733D0075F0FE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 53C87D662675733D0075F0FE /* Alamofire */; };
+		53C87D6A267573980075F0FE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D69267573980075F0FE /* Network.swift */; };
+		53C87D6E2675759C0075F0FE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D6D2675759C0075F0FE /* Config.swift */; };
+		53C87D71267576090075F0FE /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D70267576090075F0FE /* Endpoints.swift */; };
+		53C87D742675766A0075F0FE /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D732675766A0075F0FE /* PostService.swift */; };
+		53C87D77267577850075F0FE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D76267577850075F0FE /* UserService.swift */; };
+		53C87D7A2675778C0075F0FE /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D792675778C0075F0FE /* CommentService.swift */; };
+		53C87D7D267577E10075F0FE /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D7C267577E10075F0FE /* PostViewModel.swift */; };
+		53C87D8826757AFB0075F0FE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D8726757AFB0075F0FE /* UserViewModel.swift */; };
+		53C87D8B26757B360075F0FE /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C87D8A26757B360075F0FE /* CommentViewModel.swift */; };
+		53FE14EC267215AD00895000 /* HealiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE14EB267215AD00895000 /* HealiosApp.swift */; };
+		53FE14F0267215AF00895000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FE14EF267215AF00895000 /* Assets.xcassets */; };
+		53FE14F3267215AF00895000 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FE14F2267215AF00895000 /* Preview Assets.xcassets */; };
+		53FE150426721ECE00895000 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE150326721ECE00895000 /* PostsListView.swift */; };
+		53FE150626721F0B00895000 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE150526721F0B00895000 /* PostDetailView.swift */; };
+		53FE15082672214E00895000 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE15072672214E00895000 /* Post.swift */; };
+		53FE150A267221CB00895000 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE1509267221CB00895000 /* User.swift */; };
+		53FE150C2672230300895000 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE150B2672230300895000 /* Comment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53C87D69267573980075F0FE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		53C87D6D2675759C0075F0FE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		53C87D70267576090075F0FE /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		53C87D732675766A0075F0FE /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		53C87D76267577850075F0FE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		53C87D792675778C0075F0FE /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		53C87D7C267577E10075F0FE /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		53C87D8726757AFB0075F0FE /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		53C87D8A26757B360075F0FE /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		53FE14E8267215AD00895000 /* Healios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53FE14EB267215AD00895000 /* HealiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealiosApp.swift; sourceTree = "<group>"; };
+		53FE14EF267215AF00895000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53FE14F2267215AF00895000 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53FE14F4267215AF00895000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FE150326721ECE00895000 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		53FE150526721F0B00895000 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		53FE15072672214E00895000 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		53FE1509267221CB00895000 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		53FE150B2672230300895000 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53FE14E5267215AD00895000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C87D672675733D0075F0FE /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53C87D6C267575900075F0FE /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D6D2675759C0075F0FE /* Config.swift */,
+				53C87D70267576090075F0FE /* Endpoints.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		53C87D7F26757A7E0075F0FE /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D8626757AD80075F0FE /* Model */,
+				53C87D8526757AD30075F0FE /* ViewModel */,
+				53C87D8426757ACE0075F0FE /* View */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		53C87D8026757A910075F0FE /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D8126757A990075F0FE /* Model */,
+				53C87D8226757AA00075F0FE /* ViewModel */,
+				53C87D8326757AA60075F0FE /* View */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		53C87D8126757A990075F0FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53FE150B2672230300895000 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53C87D8226757AA00075F0FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D8A26757B360075F0FE /* CommentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53C87D8326757AA60075F0FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53C87D8426757ACE0075F0FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53C87D8526757AD30075F0FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D8726757AFB0075F0FE /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53C87D8626757AD80075F0FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53FE1509267221CB00895000 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53FE14DF267215AD00895000 = {
+			isa = PBXGroup;
+			children = (
+				53FE14EA267215AD00895000 /* Healios */,
+				53FE14E9267215AD00895000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53FE14E9267215AD00895000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53FE14E8267215AD00895000 /* Healios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53FE14EA267215AD00895000 /* Healios */ = {
+			isa = PBXGroup;
+			children = (
+				53FE14F4267215AF00895000 /* Info.plist */,
+				53FE14FA26721D7E00895000 /* Sources */,
+				53FE14FB26721DAF00895000 /* Resources */,
+				53FE14F1267215AF00895000 /* Preview Content */,
+			);
+			path = Healios;
+			sourceTree = "<group>";
+		};
+		53FE14F1267215AF00895000 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				53FE14F2267215AF00895000 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53FE14FA26721D7E00895000 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				53FE150226721E8F00895000 /* Main */,
+				53FE150D2672233800895000 /* Services */,
+				53FE14FE26721E5E00895000 /* Posts */,
+				53C87D7F26757A7E0075F0FE /* Users */,
+				53C87D8026757A910075F0FE /* Comments */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		53FE14FB26721DAF00895000 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53FE14FC26721DBD00895000 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53FE14FC26721DBD00895000 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				53FE14EF267215AF00895000 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		53FE14FE26721E5E00895000 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				53FE14FF26721E6400895000 /* Model */,
+				53FE150026721E6800895000 /* ViewModel */,
+				53FE150126721E6D00895000 /* View */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		53FE14FF26721E6400895000 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53FE15072672214E00895000 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53FE150026721E6800895000 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D7C267577E10075F0FE /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53FE150126721E6D00895000 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53FE150326721ECE00895000 /* PostsListView.swift */,
+				53FE150526721F0B00895000 /* PostDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53FE150226721E8F00895000 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D6C267575900075F0FE /* Global */,
+				53FE14EB267215AD00895000 /* HealiosApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		53FE150D2672233800895000 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				53C87D69267573980075F0FE /* Network.swift */,
+				53C87D732675766A0075F0FE /* PostService.swift */,
+				53C87D76267577850075F0FE /* UserService.swift */,
+				53C87D792675778C0075F0FE /* CommentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53FE14E7267215AD00895000 /* Healios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53FE14F7267215AF00895000 /* Build configuration list for PBXNativeTarget "Healios" */;
+			buildPhases = (
+				53FE14E4267215AD00895000 /* Sources */,
+				53FE14E5267215AD00895000 /* Frameworks */,
+				53FE14E6267215AD00895000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Healios;
+			packageProductDependencies = (
+				53C87D662675733D0075F0FE /* Alamofire */,
+			);
+			productName = Healios;
+			productReference = 53FE14E8267215AD00895000 /* Healios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53FE14E0267215AD00895000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					53FE14E7267215AD00895000 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 53FE14E3267215AD00895000 /* Build configuration list for PBXProject "Healios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53FE14DF267215AD00895000;
+			packageReferences = (
+				53C87D652675733D0075F0FE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 53FE14E9267215AD00895000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53FE14E7267215AD00895000 /* Healios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53FE14E6267215AD00895000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53FE14F3267215AF00895000 /* Preview Assets.xcassets in Resources */,
+				53FE14F0267215AF00895000 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53FE14E4267215AD00895000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C87D8B26757B360075F0FE /* CommentViewModel.swift in Sources */,
+				53FE14EC267215AD00895000 /* HealiosApp.swift in Sources */,
+				53C87D6E2675759C0075F0FE /* Config.swift in Sources */,
+				53C87D6A267573980075F0FE /* Network.swift in Sources */,
+				53C87D71267576090075F0FE /* Endpoints.swift in Sources */,
+				53C87D742675766A0075F0FE /* PostService.swift in Sources */,
+				53C87D7A2675778C0075F0FE /* CommentService.swift in Sources */,
+				53FE150A267221CB00895000 /* User.swift in Sources */,
+				53C87D7D267577E10075F0FE /* PostViewModel.swift in Sources */,
+				53FE150C2672230300895000 /* Comment.swift in Sources */,
+				53C87D77267577850075F0FE /* UserService.swift in Sources */,
+				53FE150426721ECE00895000 /* PostsListView.swift in Sources */,
+				53FE150626721F0B00895000 /* PostDetailView.swift in Sources */,
+				53C87D8826757AFB0075F0FE /* UserViewModel.swift in Sources */,
+				53FE15082672214E00895000 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		53FE14F5267215AF00895000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53FE14F6267215AF00895000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53FE14F8267215AF00895000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Healios/Preview Content\"";
+				DEVELOPMENT_TEAM = Q88E5TUT7G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Healios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelafonso.Healios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53FE14F9267215AF00895000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Healios/Preview Content\"";
+				DEVELOPMENT_TEAM = Q88E5TUT7G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Healios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelafonso.Healios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53FE14E3267215AD00895000 /* Build configuration list for PBXProject "Healios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53FE14F5267215AF00895000 /* Debug */,
+				53FE14F6267215AF00895000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53FE14F7267215AF00895000 /* Build configuration list for PBXNativeTarget "Healios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53FE14F8267215AF00895000 /* Debug */,
+				53FE14F9267215AF00895000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53C87D652675733D0075F0FE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53C87D662675733D0075F0FE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53C87D652675733D0075F0FE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 53FE14E0267215AD00895000 /* Project object */;
+}
